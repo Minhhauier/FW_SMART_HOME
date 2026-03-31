@@ -1,0 +1,12 @@
+CMake Error at D:/ESP_IDF_5_4_2/frameworks/esp-idf-v5.4.2/tools/cmake/build.cmake:328 (message):
+  Failed to resolve component 'config' required by component 'mqtt_wifi':
+  unknown name.
+Call Stack (most recent call first):
+  D:/ESP_IDF_5_4_2/frameworks/esp-idf-v5.4.2/tools/cmake/build.cmake:371 (__build_resolve_and_add_req)
+  D:/ESP_IDF_5_4_2/frameworks/esp-idf-v5.4.2/tools/cmake/build.cmake:372 (__build_expand_requirements)
+  D:/ESP_IDF_5_4_2/frameworks/esp-idf-v5.4.2/tools/cmake/build.cmake:675 (__build_expand_requirements)
+  D:/ESP_IDF_5_4_2/frameworks/esp-idf-v5.4.2/tools/cmake/project.cmake:718 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

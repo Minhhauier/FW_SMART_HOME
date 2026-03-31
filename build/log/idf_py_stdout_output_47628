@@ -1,0 +1,729 @@
+0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+config�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15736
+load:0x40080400,len:4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (30) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 30 2026 22:25:37[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2506ch (151660) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=00035094 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=000350b8 vaddr=3ffb0000 size=03ff8h ( 16376) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=000390b8 vaddr=40080000 size=06f60h ( 28512) load[0m
+[0;32mI (163) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a8d40h (691520) map[0m
+[0;32mI (400) esp_image: segment 5: paddr=000e8d68 vaddr=40086f60 size=10c44h ( 68676) load[0m
+[0;32mI (427) esp_image: segment 6: paddr=000f99b4 vaddr=50000000 size=00738h (  1848) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (458) cpu_start: Pro cpu start user code[0m
+[0;32mI (458) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (459) app_init: Application information:[0m
+[0;32mI (459) app_init: Project name:     main[0m
+[0;32mI (462) app_init: App version:      1[0m
+[0;32mI (466) app_init: Compile time:     Mar 30 2026 21:46:47[0m
+[0;32mI (471) app_init: ELF file SHA256:  b01940ecd...[0m
+[0;32mI (475) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (479) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (483) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (487) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (491) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (497) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (502) heap_init: At 3FFB8F40 len 000270C0 (156 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (518) heap_init: At 40097BA4 len 0000845C (33 KiB): IRAM[0m
+[0;32mI (525) spi_flash: detected chip: gd[0m
+[0;32mI (526) spi_flash: flash io: dio[0m
+[0;33mW (529) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (603) wifi:wifi driver task: 3ffc453c, prio:23, stack:6656, core=0[0m
+[0;33mW (613) DHT11: Doc DHT11 that bai[0m
+[0;32mI (613) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (613) wifi:wifi certification version: v7.0[0m
+[0;32mI (613) wifi:config NVS flash: enabled[0m
+[0;32mI (623) wifi:config nano formatting: disabled[0m
+[0;32mI (623) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (633) wifi:Init management short buffer num: 32[0m
+[0;32mI (633) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (643) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (643) wifi:Init static rx buffer num: 10[0m
+[0;32mI (643) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (653) wifi_init: rx ba win: 6[0m
+[0;32mI (653) wifi_init: accept mbox: 6[0m
+[0;32mI (653) wifi_init: tcpip mbox: 32[0m
+[0;32mI (663) wifi_init: udp mbox: 6[0m
+[0;32mI (663) wifi_init: tcp mbox: 6[0m
+[0;32mI (663) wifi_init: tcp tx win: 5760[0m
+[0;32mI (673) wifi_init: tcp rx win: 5760[0m
+[0;32mI (673) wifi_init: tcp mss: 1440[0m
+[0;32mI (673) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (683) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (683) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (773) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (843) wifi:mode : sta (8c:4f:00:a2:bf:60) + softAP (8c:4f:00:a2:bf:61)[0m
+[0;32mI (843) wifi:enable tsf[0m
+[0;32mI (843) wifi:Total power save buffer number: 16[0m
+[0;32mI (843) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (853) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (853) ESP_WEB:  WiFi AP started. SSID: Smart Home Device [0m
+[0;32mI (863) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (863) wifi:ap channel adjust o:1,1 n:10,2[0m
+[0;32mI (873) ESP_WEB:  Web server started! Connect to WiFi AP 'Smart home device' and open http://192.168.4.1/[0m
+[0;32mI (873) wifi:new:<10,0>, old:<1,1>, ap:<10,2>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (893) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (2633) DHT11: Doc DHT11 that bai[0m
+[0;32mI (4653) DHT11: Nhiet do: 30 C, Do am: 87 %[0m
+[0;32mI (5653) wifi:state: auth -> init (0x200)[0m
+[0;32mI (5673) wifi:new:<10,0>, old:<10,0>, ap:<10,2>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5673) ESP_WEB: WiFi disconnected[0m
+[0;32mI (5673) WIFI: Đang ở chế độ AP + STA [0m
+==Try connect saved wifi
+[0;32mI (6673) DHT11: Nhiet do: 30 C, Do am: 87 %[0m
+[0;32mI (8693) DHT11: Nhiet do: 30 C, Do am: 87 %[0m
+[0;32mI (10713) DHT11: Nhiet do: 30 C, Do am: 87 %[0m
+[0;32mI (12733) DHT11: Nhiet do: 30 C, Do am: 87 %[0m
+scan done
+Found 0 saved wifi
+esc_ssid: ABC
+esc_ssid: BinhT4
+esc_ssid: Canh Binh T3
+esc_ssid: Canh Binh
+esc_ssid: 702
+esc_ssid: ASUS_90
+esc_ssid: MinhNgoc
+esc_ssid: Amazinghousing.vn A
+esc_ssid: TP-Link_9892
+esc_ssid: Bin
+esc_ssid: TrongTrinh
+esc_ssid: Khanh Huy
+[0;32mI (14753) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (16773) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (18793) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (20813) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (22833) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+==Try connect saved wifi
+[0;32mI (24853) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (26873) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (28893) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (30913) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+scan done
+Found 0 saved wifi
+esc_ssid: ABC
+esc_ssid: BinhT4
+esc_ssid: Canh Binh T3
+esc_ssid: Canh Binh
+esc_ssid: AMAZINGHOUSING.VN KHU A
+esc_ssid: 702
+esc_ssid: MinhNgoc
+esc_ssid: TrongTrinh
+esc_ssid: TP-Link_9892
+esc_ssid: Bin
+esc_ssid: ASUS_90
+esc_ssid: Nem nuong Nha Trang
+[0;32mI (32933) DHT11: Nhiet do: 30 C, Do am: 88 %[0m
+[0;32mI (34953) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+[0;32mI (36973) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+[0;32mI (38993) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+[0;32mI (41013) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+==Try connect saved wifi
+[0;32mI (43033) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+[0;32mI (45053) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+[0;32mI (47073) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+[0;32mI (49093) DHT11: Nhiet do: 29 C, Do am: 89 %[0m
+scan done
+Found 0 saved wifi
+esc_ssid: ABC
+esc_ssid: BinhT4
+esc_ssid: Canh Binh T3
+esc_ssid: AMAZINGHOUSING.VN KHU A
+esc_ssid: Canh Binh
+esc_ssid: 70mai_M310_c970
+esc_ssid: 166Kimma
+[0;32mI (49603) wifi:esc_ssid: TrongTrinh[0m
+new:<10,2>, old:<10,0>, ap:<10,2>, sta:<10,0>, prof:1, snd_ch_cfg:0x0esc_ssid: TO UYEN
+
+esc_ssid: MinhNgoc
+[0;32mI (49623) wifi:esc_ssid: P2212_M[0m
+station: c6:f6:c1:e1:01:07 join, AID=1, bgn, 40Desc_ssid: ASUS_90
+
+[0;32mI (49633) ESP_WEB: User access to AP[0m
+[0;32mI (49643) wifi:<ba-add>idx:2 (ifx:1, c6:f6:c1:e1:01:07), tid:0, ssn:0, winSize:64[0m
+[0;32mI (50033) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (51113) DHT11: Doc DHT11 that bai[0m
+[0;32mI (53133) DHT11: Nhiet do: 29 C, Do am: 90 %[0m
+[0;32mI (55153) DHT11: Nhiet do: 29 C, Do am: 90 %[0m
+[0;32mI (57173) DHT11: Nhiet do: 29 C, Do am: 90 %[0m
+[0;32mI (59193) DHT11: Nhiet do: 29 C, Do am: 90 %[0m
+[0;32mI (61213) DHT11: Nhiet do: 29 C, Do am: 90 %[0m
+[0;32mI (63233) DHT11: Nhiet do: 29 C, Do am: 90 %[0m
+[0;32mI (65253) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (67273) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (69293) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (71313) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (73333) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (75353) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (77373) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (79393) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (81413) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (83433) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (85453) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (87473) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (89493) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (91513) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;33mW (93533) DHT11: Doc DHT11 that bai[0m
+[0;32mI (95553) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (97573) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (99593) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+[0;32mI (101613) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+access to interface
+scan started...
+[0;33mW (103633) DHT11: Doc DHT11 that bai[0m
+[0;32mI (105653) DHT11: Nhiet do: 29 C, Do am: 91 %[0m
+scan done
+[0;33mW (105753) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (105753) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (107673) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (109693) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (111713) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (113733) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;33mW (115753) DHT11: Doc DHT11 that bai[0m
+[0;32mI (117773) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (119793) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (121813) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (123833) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (125373) ESP_WEB: Raw SSID: BinhT4, PASS: canhbinh135[0m
+[0;32mI (125373) ESP_WEB: Decoded SSID: BinhT4, PASS: canhbinh135[0m
+[0;33mW (125383) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (125433) ESP_WEB: Connecting to SSID: BinhT4[0m
+[0;32mI (125733) wifi:new:<10,2>, old:<10,2>, ap:<10,2>, sta:<10,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (125733) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (125743) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (125743) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (125773) wifi:connected with BinhT4, aid = 1, channel 10, 40D, bssid = 18:a6:f7:8d:07:9e[0m
+[0;32mI (125773) wifi:security: WPA2-PSK, phy: bgn, rssi: -64[0m
+[0;32mI (125783) wifi:pm start, type: 1[0m
+
+[0;32mI (125783) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+connected to wifi successful
+[0;33mW (125853) DHT11: Doc DHT11 that bai[0m
+[0;32mI (125873) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (126903) wifi:<ba-add>idx:0 (ifx:0, 18:a6:f7:8d:07:9e), tid:0, ssn:0, winSize:64[0m
+[0;33mW (127873) DHT11: Doc DHT11 that bai[0m
+[0;32mI (127923) ESP_WEB: Got IP - Disabling AP interface[0m
+[0;32mI (129623) SYSTEM: Connected to WiFi, starting MQTT...[0m
+[0;32mI (129623) MQTT_WIFI: MQTT configuration function called[0m
+[0;32mI (129623) MQTT_WIFI: Other event id:7[0m
+[0;32mI (129893) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (129973) wifi:<ba-add>idx:1 (ifx:0, 18:a6:f7:8d:07:9e), tid:1, ssn:0, winSize:64[0m
+[0;32mI (130923) wifi:station: c6:f6:c1:e1:01:07 leave, AID = 1, reason = 2, bss_flags is 33786995, bss:0x3ffd0968[0m
+[0;32mI (130923) wifi:new:<10,2>, old:<10,2>, ap:<10,2>, sta:<10,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (130923) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (130933) wifi:mode : sta (8c:4f:00:a2:bf:60)[0m
+[0;32mI (130943) ESP_WEB: AP interface disabled - Device now in pure Station mode[0m
+[0;32mI (130943) esp_netif_handlers: sta ip: 192.168.0.102, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (130943) ESP_WEB: Out from setup wifi mode[0m
+[0;33mW (130953) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;33mW (131913) DHT11: Doc DHT11 that bai[0m
+[0;32mI (131923) MQTT_WIFI: MQTT_EVENT_CONNECTED[0m
+[0;32mI (131923) ESP_WEB: AP interface disabled - Device now in pure Station mode[0m
+[0;32mI (131923) MQTT_WIFI: Subscribed to topic SmartHome/SUB with message ID: 10972[0m
+[0;32mI (132233) MQTT_WIFI: MQTT_EVENT_SUBSCRIBED, msg_id=10972[0m
+[0;33mW (133933) DHT11: Doc DHT11 that bai[0m
+[0;32mI (133933) MQTT_WIFI: MQTT publish[0m
+[0;32mI (134273) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=16385[0m
+[0;32mI (135963) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (137983) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (140003) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (142023) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (144043) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (146063) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (146843) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (148083) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (150103) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (152123) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (154143) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (156163) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (158183) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (160203) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (162223) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;33mW (164243) DHT11: Doc DHT11 that bai[0m
+[0;32mI (164243) MQTT_WIFI: MQTT publish[0m
+[0;32mI (164553) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=24472[0m
+[0;32mI (166273) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (168293) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (170313) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (172333) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (174353) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (176373) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (176833) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (178393) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;33mW (180413) DHT11: Doc DHT11 that bai[0m
+[0;32mI (182433) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (184453) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (186473) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;33mW (188493) DHT11: Doc DHT11 that bai[0m
+[0;32mI (190513) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (192533) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;33mW (194553) DHT11: Doc DHT11 that bai[0m
+[0;32mI (194553) MQTT_WIFI: MQTT publish[0m
+[0;32mI (194853) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=929[0m
+[0;33mW (196583) DHT11: Doc DHT11 that bai[0m
+[0;32mI (198603) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (200623) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (202643) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (204663) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (206683) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (206823) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (208703) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (210723) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;33mW (212743) DHT11: Doc DHT11 that bai[0m
+[0;32mI (214763) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (216783) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (218803) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (220823) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (222843) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (224863) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (224863) MQTT_WIFI: MQTT publish[0m
+[0;32mI (225143) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=13202[0m
+[0;32mI (226893) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;33mW (228913) DHT11: Doc DHT11 that bai[0m
+[0;32mI (230933) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (232953) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (234973) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (236803) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (236993) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (239013) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (241033) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (243053) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (245073) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (247093) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (249113) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (251133) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (253153) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (255173) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (255173) MQTT_WIFI: MQTT publish[0m
+[0;32mI (255543) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=52119[0m
+[0;33mW (257203) DHT11: Doc DHT11 that bai[0m
+[0;32mI (259223) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (261243) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (263263) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (265283) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (266983) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (267303) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (269323) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (271343) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (273363) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (275383) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (277403) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (279423) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (281443) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (283463) DHT11: Doc DHT11 that bai[0m
+[0;32mI (285483) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (285483) MQTT_WIFI: MQTT publish[0m
+[0;32mI (285833) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=58997[0m
+[0;33mW (287513) DHT11: Doc DHT11 that bai[0m
+[0;32mI (289533) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (291553) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (293573) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (295593) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (297613) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (299633) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (301653) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (303673) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (305693) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (307713) DHT11: Doc DHT11 that bai[0m
+[0;32mI (309733) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (311753) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (313773) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (315793) DHT11: Doc DHT11 that bai[0m
+[0;32mI (315793) MQTT_WIFI: MQTT publish[0m
+[0;32mI (316323) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=34821[0m
+[0;33mW (317823) DHT11: Doc DHT11 that bai[0m
+[0;32mI (319843) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (321863) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (323883) DHT11: Doc DHT11 that bai[0m
+[0;32mI (325903) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (327923) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (329943) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (331963) DHT11: Doc DHT11 that bai[0m
+[0;32mI (333983) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (336003) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (338023) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (340043) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (342063) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (344083) DHT11: Nhiet do: 29 C, Do am: 92 %[0m
+[0;32mI (346103) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (346103) MQTT_WIFI: MQTT publish[0m
+[0;32mI (346403) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=1169[0m
+[0;33mW (348133) DHT11: Doc DHT11 that bai[0m
+[0;32mI (350153) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (352173) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (354193) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (356213) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (358233) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (360253) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (362273) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (364293) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (366313) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (368333) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (370353) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (372373) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (374393) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (376413) DHT11: Doc DHT11 that bai[0m
+[0;32mI (376413) MQTT_WIFI: MQTT publish[0m
+[0;32mI (376793) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=2877[0m
+[0;33mW (378443) DHT11: Doc DHT11 that bai[0m
+[0;32mI (380463) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (382483) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (384503) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (386523) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (388543) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (390563) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (392583) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (394603) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (396623) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (398643) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (400663) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (402683) DHT11: Doc DHT11 that bai[0m
+[0;32mI (404703) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (406723) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (406723) MQTT_WIFI: MQTT publish[0m
+[0;32mI (407193) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=11263[0m
+[0;33mW (408753) DHT11: Doc DHT11 that bai[0m
+[0;32mI (410773) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (412793) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (414813) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (416833) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (418853) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (420873) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (422893) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (424913) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (426933) DHT11: Doc DHT11 that bai[0m
+[0;32mI (428953) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (430973) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (432993) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (435013) DHT11: Doc DHT11 that bai[0m
+[0;33mW (437033) DHT11: Doc DHT11 that bai[0m
+[0;32mI (437033) MQTT_WIFI: MQTT publish[0m
+[0;32mI (437383) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=39386[0m
+[0;32mI (439063) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (441083) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (443103) DHT11: Doc DHT11 that bai[0m
+[0;32mI (445123) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (447143) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (449163) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (451183) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (453203) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (455223) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (457243) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (459263) DHT11: Doc DHT11 that bai[0m
+[0;32mI (461283) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (463303) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (465323) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (467343) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (467343) MQTT_WIFI: MQTT publish[0m
+[0;32mI (467663) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=15199[0m
+[0;33mW (469373) DHT11: Doc DHT11 that bai[0m
+[0;32mI (471393) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (473413) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (475433) DHT11: Doc DHT11 that bai[0m
+[0;32mI (477453) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (479473) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (481493) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (483513) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (485533) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (487553) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (489573) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (491593) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (493613) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (495633) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (497653) DHT11: Doc DHT11 that bai[0m
+[0;32mI (497653) MQTT_WIFI: MQTT publish[0m
+[0;32mI (498063) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=59077[0m
+[0;33mW (499683) DHT11: Doc DHT11 that bai[0m
+[0;32mI (501703) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (503723) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (505743) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (507763) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (509783) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (511803) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (513823) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (515843) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (517863) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (519883) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (521903) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (523923) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (525943) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (527963) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (527963) MQTT_WIFI: MQTT publish[0m
+[0;32mI (528243) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=27399[0m
+[0;33mW (529993) DHT11: Doc DHT11 that bai[0m
+[0;32mI (532013) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (534033) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (536053) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (538073) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (540093) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (542113) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (544133) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (546153) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (548173) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (550193) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (552213) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (554233) DHT11: Doc DHT11 that bai[0m
+[0;32mI (556253) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (558273) DHT11: Doc DHT11 that bai[0m
+[0;32mI (558273) MQTT_WIFI: MQTT publish[0m
+[0;32mI (558543) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=51727[0m
+[0;33mW (560303) DHT11: Doc DHT11 that bai[0m
+[0;32mI (562323) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (564343) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (566363) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (568383) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (570403) DHT11: Doc DHT11 that bai[0m
+[0;32mI (572423) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (574443) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (576463) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (578483) DHT11: Doc DHT11 that bai[0m
+[0;32mI (580503) DHT11: Nhiet do: 29 C, Do am: 94 %[0m
+[0;32mI (582523) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (584543) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (586563) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (588583) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (588583) MQTT_WIFI: MQTT publish[0m
+[0;32mI (588933) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=29377[0m
+[0;33mW (590613) DHT11: Doc DHT11 that bai[0m
+[0;32mI (592633) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (594653) DHT11: Doc DHT11 that bai[0m
+[0;32mI (596673) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (598693) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (600713) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (602733) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (604753) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (606773) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (608793) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (610813) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (612833) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (614853) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (616873) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (618893) DHT11: Doc DHT11 that bai[0m
+[0;32mI (618893) MQTT_WIFI: MQTT publish[0m
+[0;32mI (619423) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=878[0m
+[0;33mW (620923) DHT11: Doc DHT11 that bai[0m
+[0;32mI (622943) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (624963) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (626983) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (629003) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (631023) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (633043) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (635063) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (637083) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (639103) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (641123) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (643143) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (645163) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (647183) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (649203) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (649203) MQTT_WIFI: MQTT publish[0m
+[0;32mI (649513) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=52488[0m
+[0;32mI (651233) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (653253) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (655273) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (657293) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (659313) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (661333) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (663353) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (665373) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (667393) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (669413) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (671433) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (673453) DHT11: Doc DHT11 that bai[0m
+[0;32mI (675473) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (677493) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (679513) DHT11: Doc DHT11 that bai[0m
+[0;32mI (679513) MQTT_WIFI: MQTT publish[0m
+[0;32mI (679803) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=27045[0m
+[0;33mW (681543) DHT11: Doc DHT11 that bai[0m
+[0;32mI (683563) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (685583) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (687603) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (689623) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (691643) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (693663) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (695683) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (697703) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (699723) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (701743) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (703763) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (705783) DHT11: Doc DHT11 that bai[0m
+[0;32mI (707803) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (709823) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (709823) MQTT_WIFI: MQTT publish[0m
+[0;32mI (710193) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=14597[0m
+[0;33mW (711853) DHT11: Doc DHT11 that bai[0m
+[0;32mI (713873) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (715893) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (717913) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (719933) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (721953) DHT11: Doc DHT11 that bai[0m
+[0;32mI (723973) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (725993) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (728013) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (730033) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (732053) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (734073) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (736093) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (738113) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (740133) DHT11: Doc DHT11 that bai[0m
+[0;32mI (740133) MQTT_WIFI: MQTT publish[0m
+[0;32mI (740593) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=6476[0m
+[0;33mW (742163) DHT11: Doc DHT11 that bai[0m
+[0;32mI (744183) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (746203) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (748223) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (750243) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (752263) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (754283) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (756303) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (758323) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (760343) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (762363) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (764383) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (766403) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (768423) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (770443) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (770443) MQTT_WIFI: MQTT publish[0m
+[0;32mI (770773) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=57355[0m
+[0;33mW (772473) DHT11: Doc DHT11 that bai[0m
+[0;32mI (774493) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (776513) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (778533) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (780553) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (782573) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (784593) DHT11: Doc DHT11 that bai[0m
+[0;32mI (786613) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (788633) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (790653) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (792673) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (794693) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (796713) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (798733) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (800753) DHT11: Doc DHT11 that bai[0m
+[0;32mI (800753) MQTT_WIFI: MQTT publish[0m
+[0;32mI (801063) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=54169[0m
+[0;33mW (802783) DHT11: Doc DHT11 that bai[0m
+[0;32mI (804803) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (806823) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (808843) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (810863) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (812883) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (814903) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (816923) DHT11: Doc DHT11 that bai[0m
+[0;32mI (818943) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (820963) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (822983) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (825003) DHT11: Doc DHT11 that bai[0m
+[0;32mI (827023) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (829043) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (831063) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (831063) MQTT_WIFI: MQTT publish[0m
+[0;32mI (831363) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=2338[0m
+[0;33mW (833093) DHT11: Doc DHT11 that bai[0m
+[0;32mI (835113) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (837133) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (839153) DHT11: Nhiet do: 29 C, Do am: 94 %[0m
+[0;33mW (841173) DHT11: Doc DHT11 that bai[0m
+[0;32mI (843193) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (845213) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (847233) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (849253) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (851273) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (853293) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (855313) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (857333) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (859353) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (861373) DHT11: Doc DHT11 that bai[0m
+[0;32mI (861373) MQTT_WIFI: MQTT publish[0m
+[0;33mW (863403) DHT11: Doc DHT11 that bai[0m
+[0;32mI (863893) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=27290[0m
+[0;33mW (865423) DHT11: Doc DHT11 that bai[0m
+[0;32mI (867443) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (869463) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (871483) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (873503) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (875523) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (877543) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (879563) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (881583) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (883603) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (885623) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (887643) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (889663) DHT11: Nhiet do: 29 C, Do am: 94 %[0m
+[0;32mI (891683) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (891683) MQTT_WIFI: MQTT publish[0m
+[0;32mI (892143) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=4840[0m
+[0;33mW (893713) DHT11: Doc DHT11 that bai[0m
+[0;32mI (895733) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (897753) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (899773) DHT11: Nhiet do: 29 C, Do am: 94 %[0m
+[0;32mI (901793) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (903813) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (905833) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (907853) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (909873) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (911893) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (913913) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (915933) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (917953) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (919973) DHT11: Doc DHT11 that bai[0m
+[0;33mW (921993) DHT11: Doc DHT11 that bai[0m
+[0;32mI (921993) MQTT_WIFI: MQTT publish[0m
+[0;32mI (922533) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=4872[0m
+[0;33mW (924023) DHT11: Doc DHT11 that bai[0m
+[0;32mI (926043) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (928063) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (930083) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (932103) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (934123) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (936143) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (938163) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (940183) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (942203) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (944223) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (946243) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (948263) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (950283) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (952303) DHT11: Doc DHT11 that bai[0m
+[0;32mI (952303) MQTT_WIFI: MQTT publish[0m
+[0;33mW (954333) DHT11: Doc DHT11 that bai[0m
+[0;32mI (954873) MQTT_WIFI: MQTT_EVENT_PUBLISHED, msg_id=7915[0m
+[0;33mW (956353) DHT11: Doc DHT11 that bai[0m
+[0;32mI (958373) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (960393) DHT11: Doc DHT11 that bai[0m
+[0;32mI (962413) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (964433) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (966453) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;33mW (968473) DHT11: Doc DHT11 that bai[0m
+[0;32mI (970493) DHT11: Nhiet do: 29 C, Do am: 93 %[0m
+[0;32mI (972513) DHT11: Nh

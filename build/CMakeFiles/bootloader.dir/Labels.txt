@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/Baitap/DATN/Smart_Home/build/CMakeFiles/bootloader
+D:/Baitap/DATN/Smart_Home/build/CMakeFiles/bootloader.rule
+D:/Baitap/DATN/Smart_Home/build/CMakeFiles/bootloader-complete.rule
+D:/Baitap/DATN/Smart_Home/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/Baitap/DATN/Smart_Home/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/Baitap/DATN/Smart_Home/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/Baitap/DATN/Smart_Home/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/Baitap/DATN/Smart_Home/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/Baitap/DATN/Smart_Home/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/Baitap/DATN/Smart_Home/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
